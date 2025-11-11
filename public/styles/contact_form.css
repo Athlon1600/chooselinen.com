@@ -10,16 +10,16 @@ textarea {
 }
 
 .contact-form {
+  background: #9b9bca;
   display: flex;
   flex-flow: column;
-  width: 75vw;
   margin: auto;
-  background: #9b9bca;
+  width: 75vw;
 }
 
 .contact-form div {
-  text-align: center;
   margin: 5px;
+  text-align: center;
 }
 
 .contact-form input,
