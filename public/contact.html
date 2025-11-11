@@ -22,46 +22,39 @@
     <link href="./styles/contact_form.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a id="etsy-link" href="https://www.etsy.com/shop/ChooseLinen">Etsy</a></li>
-          <!-- <li>About me</li> -->
-          <!-- <li>Why linen</li> -->
-          <!-- <li>Linen care</li> -->
-          <!-- <li>Blog</li> -->
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <img src="./images/header_full.jpg" alt="Header" />
-    </header>
+    <script src="./js/header.js"></script>
+
     <main>
       <section>
         <h1>Contact me</h1>
         <p>
           For questions, requests, or any additional info, please contact me using the form below. I’m always happy to
-          answer any of your questions! You can also contact me through Etsy.
+          answer any of your questions! You can also
+          <a
+            href="https://www.etsy.com/messages/new?with_id=34491025&referring_id=11981257&referring_type=shop&recipient_id=34491025"
+            >contact me through Etsy</a
+          >.
         </p>
       </section>
+
       <form class="contact-form">
         <div>
           <label>
-            <input type="text" placeholder="Full name" />
+            <input type="text" name="name" placeholder="Full name" autocomplete="off" />
           </label>
         </div>
         <div>
           <label>
-            <input type="email" placeholder="Email" />
+            <input type="email" name="email" placeholder="Email" autocomplete="on" />
           </label>
         </div>
         <div>
           <label>
-            <textarea placeholder="Message"></textarea>
+            <textarea name="message" placeholder="Message"></textarea>
           </label>
         </div>
         <div>
-          <button>Send</button>
+          <button type="submit">Send</button>
         </div>
       </form>
     </main>
