@@ -16,14 +16,8 @@ html {
   max-width: 1600px;
 }
 
-header img {
-  max-width: 100%;
-}
-
 img {
   max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 a:link,
@@ -57,4 +51,12 @@ nav li:hover {
 
 nav li:active {
   background: gray;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo-container img {
+  width: 50vw;
 }
