@@ -1,2 +1,4 @@
-node_modules
-.netlify
+/.idea
+/.netlify
+/node_modules
+*.iml
