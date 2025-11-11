@@ -53,6 +53,10 @@ nav li:active {
   background: gray;
 }
 
+nav li a {
+  text-decoration: none;
+}
+
 .logo-container {
   text-align: center;
 }
