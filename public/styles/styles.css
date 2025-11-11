@@ -1,14 +1,7 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
+html {
   font-family: "Libre Baskerville", serif;
   font-size: 20px;
   line-height: 1.5;
-}
-
-body {
-  padding-bottom: 2rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -21,7 +14,6 @@ body {
 
 .container {
   max-width: 1600px;
-  margin: 0 auto;
 }
 
 header img {
