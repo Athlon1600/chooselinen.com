@@ -44,3 +44,25 @@ a:active {
 a:hover {
   text-decoration: none;
 }
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  display: inline-block;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0.5em;
+}
+
+nav li:hover {
+  background: lightgray;
+}
+
+nav li:active {
+  background: gray;
+}
