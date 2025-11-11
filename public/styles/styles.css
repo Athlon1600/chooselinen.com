@@ -1,0 +1,46 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+body {
+  padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  /* styles for iPhones and other small devices */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* styles for iPads and tablets */
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+header img {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #f1641e;
+}
+
+a:hover {
+  text-decoration: none;
+}
