@@ -1,9 +1,10 @@
 {
   "name": "chooselinen",
+  "description": "Source code for chooselinen.com",
   "version": "0.0.1",
   "scripts": {
     "serve": "live-server --cors ./public",
-    "deploy": "npx netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod --dir=./public"
+    "deploy:prod": "npx netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod --dir=./public"
   },
   "devDependencies": {
     "live-server": "^1.2.2"
