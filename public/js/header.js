@@ -18,6 +18,7 @@ function addLink(text, href, id) {
 }
 
 addLink("Home", "./index.html");
+addLink("Collection", "./collection.html");
 addLink("Etsy", "https://www.etsy.com/shop/ChooseLinen", "etsy-link");
 addLink("Contact", "./contact.html");
 

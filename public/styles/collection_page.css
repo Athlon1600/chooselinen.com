@@ -1,0 +1,30 @@
+.product-list {
+  display: flex;
+  gap: 5px;
+}
+
+.product-tile {
+  font-size: 1rem;
+  max-width: 20vw;
+  padding: 5px;
+}
+
+.product-tile {
+  border: 3px solid transparent;
+}
+
+.product-tile:hover {
+  border: 3px solid #7272b0;
+}
+
+.product-tile p {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-price {
+  font-size: 1.1em;
+  font-weight: bold;
+}
