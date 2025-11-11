@@ -24,7 +24,8 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  color: #f1641e;
+  color: #7272b0;
+  font-weight: bold;
 }
 
 a:hover {
@@ -57,10 +58,14 @@ nav li a {
   text-decoration: none;
 }
 
+#etsy-link {
+  color: #f1641e;
+}
+
 .logo-container {
   text-align: center;
 }
 
 .logo-container img {
-  width: 50vw;
+  width: 35vw;
 }

@@ -1,0 +1,33 @@
+input,
+textarea,
+button {
+  font-family: "Libre Baskerville", serif;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+.contact-form {
+  display: flex;
+  flex-flow: column;
+  width: 75vw;
+  margin: auto;
+  background: #9b9bca;
+}
+
+.contact-form div {
+  text-align: center;
+  margin: 5px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+}
+
+.contact-form textarea {
+  height: 20vh;
+}
