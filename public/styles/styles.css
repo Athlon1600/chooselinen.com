@@ -9,10 +9,6 @@ body {
   margin-top: 0;
 }
 
-img {
-  max-width: 100%;
-}
-
 a:link,
 a:visited,
 a:hover,
@@ -23,6 +19,17 @@ a:active {
 
 a:hover {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.under-construction-banner {
+  background: orange;
+  font-family: "Tahoma", sans-serif;
+  font-size: 0.75rem;
+  text-align: center;
 }
 
 nav {
@@ -61,7 +68,7 @@ footer {
   border-bottom: 1px solid transparent;
   border-top: 1px solid black;
   font-size: 0.75rem;
-  margin-top: 10px;
+  margin-top: 1rem;
   text-align: center;
 }
 

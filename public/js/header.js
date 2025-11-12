@@ -1,4 +1,7 @@
 const header = document.createElement("header");
+const underConstructionBanner = document.createElement("div");
+underConstructionBanner.classList.add("under-construction-banner");
+underConstructionBanner.textContent = "Under construction";
 const navigationBar = document.createElement("nav");
 const navigationLinkList = document.createElement("ul");
 const headerImage = document.createElement("img");
@@ -23,6 +26,5 @@ addLink("Etsy", "https://www.etsy.com/shop/ChooseLinen", "etsy-link");
 addLink("Contact", "./contact.html");
 
 navigationBar.appendChild(navigationLinkList);
-header.appendChild(navigationBar);
-header.appendChild(headerImage);
+header.append(underConstructionBanner, navigationBar, headerImage);
 document.body.appendChild(header);
