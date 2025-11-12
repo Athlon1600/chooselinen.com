@@ -5,15 +5,18 @@ function addProductTile(product) {
   const tileContainer = document.createElement("div");
   const productTile = document.createElement("div");
   productTile.classList.add("product-tile");
+  const thumbnailLink = document.createElement("a");
+  thumbnailLink.href = product.etsyLink;
   const thumbnailImage = document.createElement("img");
   thumbnailImage.src = product.thumbnailImageUrl;
   thumbnailImage.alt = product.shortDescription;
+  thumbnailLink.appendChild(thumbnailImage);
   const longDescriptionParagraph = document.createElement("p");
   longDescriptionParagraph.textContent = product.longDescription;
   const priceParagraph = document.createElement("p");
   priceParagraph.classList.add("product-price");
   priceParagraph.textContent = product.price;
-  productTile.append(thumbnailImage, longDescriptionParagraph, priceParagraph);
+  productTile.append(thumbnailLink, longDescriptionParagraph, priceParagraph);
   tileContainer.appendChild(productTile);
   productList.appendChild(tileContainer);
 }
