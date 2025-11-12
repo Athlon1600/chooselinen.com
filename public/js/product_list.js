@@ -2,7 +2,7 @@ const productList = document.createElement("div");
 productList.classList.add("product-list");
 
 function addProductTile(product) {
-  const tileContainer = document.createElement("div");
+  const productTileContainer = document.createElement("div");
   const productTile = document.createElement("div");
   productTile.classList.add("product-tile");
   const thumbnailLink = document.createElement("a");
@@ -17,8 +17,8 @@ function addProductTile(product) {
   priceParagraph.classList.add("product-price");
   priceParagraph.textContent = product.price;
   productTile.append(thumbnailLink, longDescriptionParagraph, priceParagraph);
-  tileContainer.appendChild(productTile);
-  productList.appendChild(tileContainer);
+  productTileContainer.appendChild(productTile);
+  productList.appendChild(productTileContainer);
 }
 
 fetch("./data/products.json")

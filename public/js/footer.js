@@ -1,4 +1,4 @@
-const footerElement = document.createElement("footer");
+const footer = document.createElement("footer");
 const copyrightParagraph = document.createElement("p");
 const copyrightText = document.createElement("small");
 copyrightText.textContent = "Copyright © 2025 ChooseLinen. All rights reserved.";
@@ -7,5 +7,5 @@ const madeWithParagraph = document.createElement("p");
 const madeWithText = document.createElement("small");
 madeWithText.textContent = "Made with ♥ by Egle and her sons";
 madeWithParagraph.appendChild(madeWithText);
-footerElement.append(copyrightParagraph, madeWithParagraph);
-document.body.appendChild(footerElement);
+footer.append(copyrightParagraph, madeWithParagraph);
+document.body.appendChild(footer);
