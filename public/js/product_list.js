@@ -1,0 +1,43 @@
+const productList = document.createElement("div");
+productList.classList.add("product-list");
+
+function addProductTile(product) {
+  const productTile = document.createElement("div");
+  productTile.classList.add("product-tile");
+  const thumbnailImage = document.createElement("img");
+  thumbnailImage.src = product.thumbnailImageUrl;
+  thumbnailImage.alt = product.shortDescription;
+  const longDescriptionParagraph = document.createElement("p");
+  longDescriptionParagraph.textContent = product.longDescription;
+  const priceParagraph = document.createElement("p");
+  priceParagraph.classList.add("product-price");
+  priceParagraph.textContent = product.price;
+  productTile.append(thumbnailImage, longDescriptionParagraph, priceParagraph);
+  productList.appendChild(productTile);
+}
+
+addProductTile({
+  thumbnailImageUrl: "https://i.etsystatic.com/11981257/r/il/fb3518/3451379871/il_1588xN.3451379871_ne93.jpg",
+  shortDescription: "Small Linen Tote Bag With 2 Pockets",
+  longDescription:
+    "Small linen tote bag with 2 pockets, handmade linen bag with lining, linen lunch bag, summer handbag, reusable linen tote, linen custom bag",
+  price: "$46.00",
+});
+
+addProductTile({
+  thumbnailImageUrl: "https://i.etsystatic.com/11981257/r/il/798961/2802063278/il_1588xN.2802063278_s581.jpg",
+  shortDescription: "Linen Nightdress",
+  longDescription:
+    "Linen nightdress, linen dress, linen nightgown, linen sleepwear, women sleepwear, V neck dress, linen summer dress, women’s nightgown, dress",
+  price: "$67.00+",
+});
+
+addProductTile({
+  thumbnailImageUrl: "https://i.etsystatic.com/11981257/r/il/6d1cee/4296272871/il_1588xN.4296272871_69v8.jpg",
+  shortDescription: "Linen Bathrobe",
+  longDescription:
+    "Linen bathrobe for women, natural linen robe, linen long sleeve robe, linen bathrobe, shawl neck robe, long linen robe, robe with pockets",
+  price: "$97.00+",
+});
+
+document.querySelector("main").appendChild(productList);
