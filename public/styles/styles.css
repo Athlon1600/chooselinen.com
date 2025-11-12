@@ -4,16 +4,9 @@ html {
   line-height: 1.5;
 }
 
-@media only screen and (max-width: 767px) {
-  /* styles for iPhones and other small devices */
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* styles for iPads and tablets */
-}
-
-.container {
-  max-width: 1600px;
+body {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 img {
@@ -63,10 +56,27 @@ nav li a {
   color: #f1641e;
 }
 
+footer {
+  background: #f6f6f6;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid black;
+  font-size: 0.75rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
 .logo-container {
   text-align: center;
 }
 
 .logo-container img {
   width: 35vw;
+}
+
+@media only screen and (max-width: 767px) {
+  /* styles for iPhones and other small devices */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* styles for iPads and tablets */
 }
