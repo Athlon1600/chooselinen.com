@@ -40,21 +40,21 @@
       <form class="contact-form">
         <div>
           <label>
-            <input type="text" name="name" placeholder="Full name" autocomplete="off" />
+            <input type="text" name="name" placeholder="Full name" autocomplete="off" required />
           </label>
         </div>
         <div>
           <label>
-            <input type="email" name="email" placeholder="Email" autocomplete="on" />
+            <input type="email" name="email" placeholder="Email" autocomplete="on" required />
           </label>
         </div>
         <div>
           <label>
-            <textarea name="message" placeholder="Message"></textarea>
+            <textarea name="message" placeholder="Message" required></textarea>
           </label>
         </div>
         <div>
-          <button type="submit">Send</button>
+          <button type="submit" disabled>Send - <i>coming soon</i></button>
         </div>
       </form>
     </main>
